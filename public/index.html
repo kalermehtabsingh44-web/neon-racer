@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Ridge Arena</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <canvas id="gameCanvas" aria-label="Neon Ridge Arena game view"></canvas>
+
+      <section class="hud hud-top">
+        <div class="meter-block">
+          <span class="label">Health</span>
+          <div class="health-frame">
+            <div id="healthFill" class="health-fill"></div>
+          </div>
+        </div>
+        <div class="stat-stack">
+          <span id="scoreText">0 / 0</span>
+          <small id="statusText">Connecting</small>
+        </div>
+      </section>
+
+      <section class="hud hud-bottom">
+        <div class="status-chip" id="vehicleText">On foot</div>
+        <div class="status-chip" id="playersText">0 online</div>
+      </section>
+
+      <canvas id="minimap" aria-label="Mini map"></canvas>
+
+      <form class="join-panel" id="joinPanel">
+        <div class="brand-row">
+          <span class="brand-mark"></span>
+          <div>
+            <h1>Neon Ridge Arena</h1>
+            <p>Browser squad combat</p>
+          </div>
+        </div>
+        <label>
+          <span>Player name</span>
+          <input id="nameInput" maxlength="16" autocomplete="off" placeholder="Racer" />
+        </label>
+        <div class="swatch-row" id="colorSwatches" aria-label="Choose player color"></div>
+        <button type="submit">Join Match</button>
+      </form>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>

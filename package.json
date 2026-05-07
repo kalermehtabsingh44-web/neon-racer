@@ -1,0 +1,14 @@
+{
+  "name": "neon-ridge-arena",
+  "version": "1.0.0",
+  "description": "A browser multiplayer shooting game with a large map and drivable cars.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node scripts/smoke-test.js"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
